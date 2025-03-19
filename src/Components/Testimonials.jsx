@@ -11,8 +11,7 @@ const Testimonials = ({ testimonials }) => {
     };
   return (
  
-    <section className=" px-4 md:py-26 py-5 lg:px-20">
-    <div className="flex flex-col md:flex-row gap-10 md:gap-20">
+    <div className="flex flex-col md:flex-row gap-10 md:gap-20  px-4 md:py-26 py-5 lg:px-20">
       <div className="w-full md:w-1/3 space-y-4">
       <AnimatePresence>
   {testimonials.slice(0, visibleCount).map((testimonial) => (
@@ -73,7 +72,6 @@ const Testimonials = ({ testimonials }) => {
         </motion.div>
       </div>
     </div>
-  </section>
   );
 };
 

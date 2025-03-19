@@ -27,8 +27,8 @@ const Plancomparison = ({ plansComp }) => {
       }, []);
 
     return (
-        <section className="px-3 lg:px-20">
-        <div className="mx-auto ">
+       
+        <div className="px-3 lg:px-20 ">
         <h2
         className="text-center text-[16px] text-[#1A56DB] font-medium cursor-pointer mt-16 md:mb-16 mb-10 flex items-center justify-center"
         onClick={() => setIsOpen(!isOpen)}
@@ -120,8 +120,6 @@ const Plancomparison = ({ plansComp }) => {
       )}
         </div>
 
-        
-      </section>
     );
   };
   

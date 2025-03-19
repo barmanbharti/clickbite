@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Businessplans = ({ plans }) => {
   return (
- <section className="  px-3   lg:px-20 ">
+ <div className=" px-3   lg:px-20  ">
     
-    <div className="md:text-center text-left mb-10 mt-10 md:mt-0">
+    <div className="md:text-center text-left mb-10 mt-10 md:mt-0 ">
         <h2 className="md:text-[36px] text-[30px]  leading-[125%] font-extrabold ">
         Choose the right plan for your business
         </h2>
@@ -112,7 +112,7 @@ const Businessplans = ({ plans }) => {
         </Tabs.Content>
       </Tabs.Root>
     </div>
- </section>
+ </div>
   );
 };
 
