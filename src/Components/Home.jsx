@@ -164,7 +164,7 @@ function Home() {
     {/* section-6-end */}
     
  {/* section-7-start */}
-    <motion.section className="mt-10  mb-10 md:mb-24" whileInView="visible" viewport={{ once: true }} variants={popUp}>
+    <section className="mt-10  mb-10 md:mb-24" >
     <div className="w-full md:max-w-3xl mx-auto">
       <h2 className="md:text-[36px] text-[30px]  leading-[125%] font-extrabold text-center mb-8 md:mb-16">
       Frequently Asked Questions
@@ -199,11 +199,11 @@ function Home() {
 
       </div>
       </div>
-    </motion.section>
+    </section>
      {/* section-7-start */}
 
  {/* section-8-start */}
-     <motion.section className="mb-16" whileInView="visible" viewport={{ once: true }} variants={popUp}> 
+     <section className="mb-16" > 
      <div className="flex flex-col items-center justify-center w-full md:py-16 py-8 px-4 bg-gray-50">
       <h2 className="text-[30px] md:text-[36px] font-extrabold text-black text-center leading-[125%]">
         Get started with Clickbite today
@@ -232,7 +232,7 @@ function Home() {
         Instant signup. No credit card required.
       </p>
     </div>
-     </motion.section>
+     </section>
  {/* section-8-end */}
     </>
 
