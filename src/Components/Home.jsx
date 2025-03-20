@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 function Home() {
    const [data, setData] = useState(featuresData);
   const { staticFeatures: descriptions, dynamicFeatures: features, cardsData, testimonials, pricingPlans, pricingData, faqs } = data;
-  
+
   const slideLeft = {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: 'easeOut' } },
@@ -30,7 +30,7 @@ function Home() {
     <div className="flex justify-center md:justify-start">
     <div className="bg-[#F3F4F6] text-[#6B7280] font-semibold px-3 py-[0.2rem] rounded-full text-sm  w-[400px] sm:w-[350px] flex justify-between items-center">
         <p className='bg-[#1A56DB] px-3 py-[0.2rem] t rounded-xl text-white font-normal text-[12px]'>New</p> 
-        <p className=' sm:text-[14px] text-[11px] font-medium'>Clickbite v2 is out! See what's new </p>
+        <p className=' sm:text-[14px] text-[12px] font-medium'>Clickbite v2 is out! See what's new </p>
         <img src="/Vector.svg" alt="" className='w-[0.4rem] py-2'/>
       </div>
       </div>
@@ -55,7 +55,7 @@ function Home() {
     </div>
 
     <div className="flex justify-end items-center ">
-    <img src="/mockup.svg" alt="Mockup" className="w-full md-w-full lg:w-1/1.5" />
+    <img src="/mockup.jpg" alt="Mockup" className="w-full md-w-full lg:w-1/1.5" />
     </div>
   </div>
 
@@ -158,13 +158,11 @@ function Home() {
     {/* section-5-end */}
 
     {/* section-6-start */}
-    <motion.section  initial="hidden" whileInView="visible" viewport={{ once: true }} variants={popUp}>
     <Plancomparison plansComp={pricingData} />
-    </motion.section>
     {/* section-6-end */}
     
  {/* section-7-start */}
-    <section className="mt-10  mb-10 md:mb-24" >
+    <motion.section className="mt-10  mb-10 md:mb-24" whileInView="visible" viewport={{ once: true }} variants={popUp}>
     <div className="w-full md:max-w-3xl mx-auto">
       <h2 className="md:text-[36px] text-[30px]  leading-[125%] font-extrabold text-center mb-8 md:mb-16">
       Frequently Asked Questions
@@ -199,11 +197,11 @@ function Home() {
 
       </div>
       </div>
-    </section>
+    </motion.section>
      {/* section-7-start */}
 
  {/* section-8-start */}
-     <section className="mb-16" > 
+     <motion.section className="mb-16" whileInView="visible" viewport={{ once: true }} variants={popUp}> 
      <div className="flex flex-col items-center justify-center w-full md:py-16 py-8 px-4 bg-gray-50">
       <h2 className="text-[30px] md:text-[36px] font-extrabold text-black text-center leading-[125%]">
         Get started with Clickbite today
@@ -232,7 +230,7 @@ function Home() {
         Instant signup. No credit card required.
       </p>
     </div>
-     </section>
+     </motion.section>
  {/* section-8-end */}
     </>
 
