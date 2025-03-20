@@ -55,7 +55,7 @@ function Home() {
     </div>
 
     <div className="flex justify-end items-center ">
-    <img src="/mockup.jpg" alt="Mockup" className="w-full md-w-full lg:w-1/1.5" />
+    <img src="/mockup.jpg" alt="Mockup" loading="lazy" className="w-full md-w-full lg:w-1/1.5" />
     </div>
   </div>
 
